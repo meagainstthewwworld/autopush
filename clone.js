@@ -5,9 +5,26 @@ const simpleGit = require("simple-git")();
 const shellJs = require("shelljs");
 // Simple Git with Promise for handling success and failure
 const simpleGitPromise = require("simple-git/promise")();
+const octokit = require("@octokit/rest")();
+
+// Authentication using username and password
+// octokit.authenticate({
+//   type: "basic",
+//   username: process.env.USERNAME,
+//   password: process.env.PASSWORD
+// });
+// // Variables for Repo name and description
+// var folderName = "auto-create-repo";
+// var repoDescription = "repo creation using git api";
+
+// //Create a Repository online via Github Api
+// const createGitHubRepo = octokit.repos.create({
+//   folderName,
+//   repoDescription
+// });
 
 // change current directory to repo directory in local
-shellJs.cd("../autopush/");
+shellJs.cd("../auto-create-repo/");
 // Repo name
 const repo = "autopush"; //Repo name
 // User name and password of your GitHub
