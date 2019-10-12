@@ -1,0 +1,16 @@
+{
+  "name": "gatbsybuilder",
+  "version": "1.0.0",
+  "description": "a builder for Gatsby Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Zakiy",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.1.0",
+    "shelljs": "^0.8.3",
+    "simple-git": "^1.126.0"
+  }
+}
